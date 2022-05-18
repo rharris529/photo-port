@@ -1,24 +1,25 @@
 import React from 'react'
 
-function categorySelected(name) {
-    console.log(`${name} clicked`)
-};
-
-const categories = [
-    {
-        name: "commerical",
-        description:
-        "Photos of grocery stores, food trucks, and other commerical projects",
-    },
-    { name: "portraits", description: "Portraits of people in my life"},
-    { name: "food", description: "Delicious delicacies"},
-    {
-        name: "landscape",
-        description: "Fields, farmhouses, waterfalls, and the beauty of nature",
-    },
-];
-
 function Nav() {
+    
+    const categories = [
+        {
+            name: "commerical",
+            description:
+            "Photos of grocery stores, food trucks, and other commerical projects",
+        },
+        { name: "portraits", description: "Portraits of people in my life"},
+        { name: "food", description: "Delicious delicacies"},
+        {
+            name: "landscape",
+            description: "Fields, farmhouses, waterfalls, and the beauty of nature",
+        },
+    ];
+    
+    function categorySelected(name) {
+        console.log(`${name} clicked`)
+        };
+    
     return (
         <header>
             <h2>
